@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: inter-Bold;
+    src: url("../fonts/Inter-Bold.ttf");
+}
+@font-face {
+    font-family: inter-Medium;
+    src: url("../fonts/Inter-Medium.ttf");
+}
+@font-face {
+    font-family: inter-Regular;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: inter-SemiBold;
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+
+html{
+    font-size: 14px;
+}
+
+:root {
+
+    font-family: inter-Regular, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:root{
+    /* base colors for this project */
+    --light_primary:#3F88C5;
+    --dark_color: #000;
+    --light_color:#fff;
+    --light-bgcolor: #fafafa;
+
+
+    /* transistions */
+    --tran-02:all 0.2 ease;
+    --tran-03:all 0.3 ease;
+    --tran-04:all 0.4 ease;
+    --tran-05:all 0.5 ease;
+
+
+}
+
+
+body{
+    height: 100vh;
+    background-color: var(--light-bgcolor);
+    color: var(--dark_color);
+    transition:var(--tran-02) ;
+}
+
+body.purple{
+    --light_primary:#7750a1;
+    --dark_color: #000;
+    --light_color:#fff;
+    --light-bgcolor: #fafafa;
+}
+
+body.biz{
+    --light_primary:#3F88C5;
+    --dark_color: #000;
+    --light_color:#fff;
+    --light-bgcolor: #fafafa;
+}
+
+body.maintms{
+    --light_primary:#032B43;
+    --dark_color: #000;
+    --light_color:#fff;
+    --light-bgcolor: #fafafa;
+}
+
+body.corestep{
+    --light_primary:#413d52;
+    --dark_color: #000;
+    --light_color:#201702d8;
+    --light-bgcolor: #ffc10781;
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: var(--light-bgcolor);
+    }
+    a:hover {
+        color: var(--light_primary);
+    }
+    button {
+        background-color: var(--light-bgcolor);
+    }
+}
+
+
